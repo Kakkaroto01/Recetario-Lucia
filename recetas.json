@@ -1,0 +1,266 @@
+[
+    {
+        "receta": "Arroz a la cubana",
+        "categoria": "Arroz"
+    },
+    {
+        "receta": "Arroz 3Delicias",
+        "categoria": "Arroz"
+    },
+    {
+        "receta": "Arroz con pollo al curry",
+        "categoria": "Arroz"
+    },
+    {
+        "receta": "Macarrones con tomate",
+        "categoria": "Pastas"
+    },
+    {
+        "receta": "Espaguetis con nata y bacon",
+        "categoria": "Pastas"
+    },
+    {
+        "receta": "Pasta al pesto",
+        "categoria": "Pastas"
+    },
+    {
+        "receta": "Macarrones con queso",
+        "categoria": "Pastas"
+    },
+    {
+        "receta": "Pasta de Carlota",
+        "categoria": "Pastas"
+    },
+    {
+        "receta": "Pasta de cherrys con feta",
+        "categoria": "Pastas"
+    },
+    {
+        "receta": "Lechuga con cosas",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "César",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "Canónigos con queso de cabra",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "Canónigos con pollo, manzana con soja",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "Ensalada de pasta",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "Tomate con mayonesa",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "Tomates aliñaos",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "Ensalada de mango, aguacate, feta",
+        "categoria": "Ensaladas"
+    },
+    {
+        "receta": "De calabacín",
+        "categoria": "Cremitas"
+    },
+    {
+        "receta": "De espinacas",
+        "categoria": "Cremitas"
+    },
+    {
+        "receta": "De zanahoria",
+        "categoria": "Cremitas"
+    },
+    {
+        "receta": "De calabaza",
+        "categoria": "Cremitas"
+    },
+    {
+        "receta": "Lubina/dorada/ al horno",
+        "categoria": "Pescado"
+    },
+    {
+        "receta": "Salmón a la plancha",
+        "categoria": "Pescado"
+    },
+    {
+        "receta": "Atún",
+        "categoria": "Pescado"
+    },
+    {
+        "receta": "Pez espada a la plancha",
+        "categoria": "Pescado"
+    },
+    {
+        "receta": "Gambas al ajillo",
+        "categoria": "Pescado"
+    },
+    {
+        "receta": "Albóndigas con tomate",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Estofado de costillas y patata a la bbq",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Pisto",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Muslitos de pollo",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Puré de patata de sobre con filete",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Patatas alioli",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Patatas aliñadas",
+        "categoria": "Variado"
+    },
+    {
+        "receta": "Cocido/sopita",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Lentejas",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Tortilla con patatas",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Gazpacho/salmorejo",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Chocos fritos",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Lagrimitas de pollo con alioli",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Cachopo",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Solomillo al whisky",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Paella",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Boquerones fritos",
+        "categoria": "Cuando eches de menos casita"
+    },
+    {
+        "receta": "Fajitas de pollo/quesadillas",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Hamburguesitas",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Alitas horno/fritas",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Pan de ajo y queso",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Pan pizza",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Patatas rellenas",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Gratinado de patatas",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Nachos con queso",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Huevos fritos con patatas",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Fingers de pollo",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Noodles",
+        "categoria": "Recetas chulis"
+    },
+    {
+        "receta": "Filetes pollo plancha",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Filetes de chuleta de cerdo plancha",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Filetes de ternera plancha",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Filetes de lomo de cerdo",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Filetes de solomillo de cerdo",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Tortilla francesa",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Sandwich jamón y queso",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Salchichas/longanizas",
+        "categoria": "Cenas rápidas"
+    },
+    {
+        "receta": "Arroz",
+        "categoria": "Preparaciones básicas"
+    },
+    {
+        "receta": "Pasta",
+        "categoria": "Preparaciones básicas"
+    },
+    {
+        "receta": "Bechamel",
+        "categoria": "Preparaciones básicas"
+    },
+    {
+        "receta": "Alioli",
+        "categoria": "Preparaciones básicas"
+    }
+]
