@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recetas Carlota</title>
+<style>
+    :root {
+      --nav-height: 64px;
+      --rosa-pastel: #FFE0EA;
+      --rosa-oscuro: #E88CAB;
+      --rosa-hover: #F6A9C0;
+      --texto: #3f3f3f;
+      --titulo: #6b4226;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      margin:0; font-family:'Segoe UI', sans-serif; color:var(--texto);
+      background:#fffaf5 url('fondo.jpg') no-repeat center center fixed;
+      background-size:cover;
+    }
+    header {
+      background:rgba(255,228,225,0.92); padding:50px; text-align:center;
+      font-size:3em; font-weight:bold; font-family:'Brush Script MT', cursive; color:var(--titulo);
+    }
+    nav {
+      position:sticky; top:0; z-index:1000;
+      background:rgba(232,140,171,0.95); padding:12px 10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    }
+    nav ul { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:center; }
+    nav ul > li { position:relative; }
+    nav ul > li > a {
+      text-decoration:none; color:#fff; font-weight:700; padding:8px 12px; border-radius:10px;
+      transition:background 0.2s ease-in-out, transform 0.2s ease-in-out; display:inline-block;
+    }
+    nav ul > li > a:hover { background:var(--rosa-hover); transform:translateY(-1px); }
+    nav ul li ul {
+      display:none; position:absolute; top:calc(100% + 8px); left:0;
+      background:rgba(255,250,240,0.98); padding:12px; border-radius:12px; 
+      box-shadow:0 8px 18px rgba(0,0,0,0.12); min-width:360px; max-width:460px;
+      white-space:normal; word-wrap:break-word; line-height:1.35; z-index:2000;
+    }
+    nav ul li:hover ul { display:block; }
+    nav ul li ul li a {
+      display:block; text-decoration:none; color:var(--rosa-oscuro); padding:6px; border-radius:6px;
+    }
+    nav ul li ul li a:hover, nav ul li ul li a:focus { text-decoration:underline; background:transparent; }
+    section {
+      background: #FFD6E2; margin:22px auto; padding:22px; border-radius:16px;
+      max-width:900px; box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    }
+    h2 { color:#8b5e3c; border-bottom:2px solid #f8c8c8; padding-bottom:6px; margin-top:0; }
+    h3 { color:#444; margin-top:16px; }
+    h3, h2 { scroll-margin-top: 50vh; } /* ahora el título queda más centrado en la pantalla */
+    a:focus-visible { outline:2px dashed #fff; outline-offset:2px; }
+  </style>
+</head>
+<body>
+<header>Recetas Carlota</header>
+<nav><ul>
+<li><a href="#Arroz">Arroz</a><ul><li><a href="#Arroz_a_la_cubana">Arroz a la cubana</a></li><li><a href="#Arroz_3Delicias">Arroz 3Delicias</a></li><li><a href="#Arroz_con_pollo_al_curry">Arroz con pollo al curry</a></li></ul></li><li><a href="#Pastas">Pastas</a><ul><li><a href="#Macarrones_con_tomate">Macarrones con tomate</a></li><li><a href="#Espaguetis_con_nata_y_bacon">Espaguetis con nata y bacon</a></li><li><a href="#Pasta_al_pesto">Pasta al pesto</a></li><li><a href="#Macarrones_con_queso">Macarrones con queso</a></li><li><a href="#Pasta_de_Carlota">Pasta de Carlota</a></li><li><a href="#Pasta_de_cherrys_con_feta">Pasta de cherrys con feta</a></li></ul></li><li><a href="#Ensaladas">Ensaladas</a><ul><li><a href="#Lechuga_con_cosas">Lechuga con cosas</a></li><li><a href="#César">César</a></li><li><a href="#Canónigos_con_queso_de_cabra">Canónigos con queso de cabra</a></li><li><a href="#Canónigos_con_pollo,_manzana_con_soja">Canónigos con pollo, manzana con soja</a></li><li><a href="#Ensalada_de_pasta">Ensalada de pasta</a></li><li><a href="#Tomate_con_mayonesa">Tomate con mayonesa</a></li><li><a href="#Tomates_aliñaos">Tomates aliñaos</a></li><li><a href="#Ensalada_de_mango,_aguacate,_feta">Ensalada de mango, aguacate, feta</a></li></ul></li><li><a href="#Cremitas">Cremitas</a><ul><li><a href="#De_calabacín">De calabacín</a></li><li><a href="#De_espinacas">De espinacas</a></li><li><a href="#De_zanahoria">De zanahoria</a></li><li><a href="#De_calabaza">De calabaza</a></li></ul></li><li><a href="#Pescado">Pescado</a><ul><li><a href="#Lubina/dorada/_al_horno">Lubina/dorada/ al horno</a></li><li><a href="#Salmón_a_la_plancha">Salmón a la plancha</a></li><li><a href="#Atún">Atún</a></li><li><a href="#Pez_espada_a_la_plancha">Pez espada a la plancha</a></li><li><a href="#Gambas_al_ajillo">Gambas al ajillo</a></li></ul></li><li><a href="#Variado">Variado</a><ul><li><a href="#Albóndigas_con_tomate">Albóndigas con tomate</a></li><li><a href="#Estofado_de_costillas_y_patata_a_la_bbq">Estofado de costillas y patata a la bbq</a></li><li><a href="#Pisto">Pisto</a></li><li><a href="#Muslitos_de_pollo">Muslitos de pollo</a></li><li><a href="#Puré_de_patata_de_sobre_con_filete">Puré de patata de sobre con filete</a></li><li><a href="#Patatas_alioli">Patatas alioli</a></li><li><a href="#Patatas_aliñadas">Patatas aliñadas</a></li></ul></li><li><a href="#Cuando eches de menos casita">Cuando eches de menos casita</a><ul><li><a href="#Cocido/sopita">Cocido/sopita</a></li><li><a href="#Lentejas">Lentejas</a></li><li><a href="#Tortilla_con_patatas">Tortilla con patatas</a></li><li><a href="#Gazpacho/salmorejo">Gazpacho/salmorejo</a></li><li><a href="#Chocos_fritos">Chocos fritos</a></li><li><a href="#Lagrimitas_de_pollo_con_alioli">Lagrimitas de pollo con alioli</a></li><li><a href="#Cachopo">Cachopo</a></li><li><a href="#Solomillo_al_whisky">Solomillo al whisky</a></li><li><a href="#Paella">Paella</a></li><li><a href="#Boquerones_fritos">Boquerones fritos</a></li></ul></li><li><a href="#Recetas chulis">Recetas chulis</a><ul><li><a href="#Fajitas_de_pollo/quesadillas">Fajitas de pollo/quesadillas</a></li><li><a href="#Hamburguesitas">Hamburguesitas</a></li><li><a href="#Alitas_horno/fritas">Alitas horno/fritas</a></li><li><a href="#Pan_de_ajo_y_queso">Pan de ajo y queso</a></li><li><a href="#Pan_pizza">Pan pizza</a></li><li><a href="#Patatas_rellenas">Patatas rellenas</a></li><li><a href="#Gratinado_de_patatas">Gratinado de patatas</a></li><li><a href="#Nachos_con_queso">Nachos con queso</a></li><li><a href="#Huevos_fritos_con_patatas">Huevos fritos con patatas</a></li><li><a href="#Fingers_de_pollo">Fingers de pollo</a></li><li><a href="#Noodles">Noodles</a></li></ul></li><li><a href="#Cenas rápidas">Cenas rápidas</a><ul><li><a href="#Filetes_pollo_plancha">Filetes pollo plancha</a></li><li><a href="#Filetes_de_chuleta_de_cerdo_plancha">Filetes de chuleta de cerdo plancha</a></li><li><a href="#Filetes_de_ternera_plancha">Filetes de ternera plancha</a></li><li><a href="#Filetes_de_lomo_de_cerdo">Filetes de lomo de cerdo</a></li><li><a href="#Filetes_de_solomillo_de_cerdo">Filetes de solomillo de cerdo</a></li><li><a href="#Tortilla_francesa">Tortilla francesa</a></li><li><a href="#Sandwich_jamón_y_queso">Sandwich jamón y queso</a></li><li><a href="#Salchichas/longanizas">Salchichas/longanizas</a></li></ul></li><li><a href="#Preparaciones básicas">Preparaciones básicas</a><ul><li><a href="#Arroz">Arroz</a></li><li><a href="#Pasta">Pasta</a></li><li><a href="#Bechamel">Bechamel</a></li><li><a href="#Alioli">Alioli</a></li></ul></li><li><a href="#extras">Extras</a></li></ul></nav>
+<section id="Arroz">
+<h2>Arroz</h2>
+<h3 id="Arroz_a_la_cubana">Arroz a la cubana</h3>
+<p>Metes el tomate al micro unos 3 min pa cocinarlo, le puedes meter salchichas y/o huevo frito</p>
+<h3 id="Arroz_3Delicias">Arroz 3Delicias</h3>
+<p>Lo aliñas con salsa de soja, opciones-&gt; maíz, jamón cocido, tortilla, guisantes, gambas</p>
+<h3 id="Arroz_con_pollo_al_curry">Arroz con pollo al curry</h3>
+<p>Para la salsa salteas el pollo en cubitos con sal pimienta y curry, le echas nata y ajustas las especias al gusto</p>
+</section>
+<section id="Pastas">
+<h2>Pastas</h2>
+<h3 id="Macarrones_con_tomate">Macarrones con tomate</h3><p></p>
+<h3 id="Espaguetis_con_nata_y_bacon">Espaguetis con nata y bacon</h3><p></p>
+<h3 id="Pasta_al_pesto">Pasta al pesto</h3><p>Si quieres hacer el pesto casero—&gt; albahaca fresca con piñones aceite y parmesano a la batidora</p>
+<h3 id="Macarrones_con_queso">Macarrones con queso</h3><p>Haces bechamel y le echas todo el queso que quieras, opcional metes la mezcla con la salsa en una fuente y con mas queso por encima a gratinar al horno</p>
+<h3 id="Pasta_de_Carlota">Pasta de Carlota</h3><p>A fuego medio alto haces pechuga de pollo con mantequilla y 2 ajos, la sacas, seguramente los ajos esos se hayan quemado entonces los puedes tirar y en esa misma sartén cocinas 2 ajos más y les echas nata y mas mantequilla y lo juntas todo</p>
+<h3 id="Pasta_de_cherrys_con_feta">Pasta de cherrys con feta</h3><p>En una bandeja de horno echas tomates cherry aceite sal cayena y pimienta y un trozo grandecito de queso feta al que le echas un chorrito de aceite y orégano, y al horno a 220gº 20-25 min, pero ve comprobándolo a los 10-15 por si acaso, hasta q los tomates estén blanditos, cuando lo saques lo apachurras todo con un tenedor y se lo echas a la pasta</p>
+</section>
+<section id="Ensaladas">
+<h2>Ensaladas</h2>
+<h3 id="Lechuga_con_cosas">Lechuga con cosas</h3><p>opciones—&gt; maíz, tomate, atún, pepino, aceitunas, pollo, aguacate, melva, cebolla, huevo duro</p>
+<h3 id="César">César</h3><p>pollo, bacon, cebolla frita, picatostes, salsa cesar</p>
+<h3 id="Canónigos_con_queso_de_cabra">Canónigos con queso de cabra</h3><p></p>
+<h3 id="Canónigos_con_pollo,_manzana_con_soja">Canónigos con pollo, manzana con soja</h3><p>Cortas el pollo y la manzana en cubitos, y los salteas en una sartén con aceite y cuando estén mas o menos hechos les echas un chorreón de salsa de soja, la manzana tiene q estar blandita y doradita, se los echas a los canónigos y la aliñas con mas salsa de soja o aceite y sal (mi fav😊)</p>
+<h3 id="Ensalada_de_pasta">Ensalada de pasta</h3><p>opciones—&gt; lechuga, canónigos, rúcula, huevo duro, queso, cherrys, maíz, jamón cocido, aceitunas, aguacate, pepino, atún</p>
+<h3 id="Tomate_con_mayonesa">Tomate con mayonesa</h3><p>Cortas el tomate en cubos y lo aliñas con aceite sal y mayonesa</p>
+<h3 id="Tomates_aliñaos">Tomates aliñaos</h3><p>Cortas el tomate en cubos, lo aliñas con orégano, 2-3 ajos picados, aceite sal y vinagre, opcional melva</p>
+<h3 id="Ensalada_de_mango,_aguacate,_feta">Ensalada de mango, aguacate, feta</h3><p></p>
+</section>
+<section id="Cremitas">
+<h2>Cremitas</h2>
+<h3 id="De_calabacín">De calabacín</h3><p>Cortas 2 calabacines, 1/4 de cebolla, y lo sofríes en una olla, le echas sal, pimienta y nuez moscada, cuando esté blandito le echas leche hasta que cubra, y te recomiendo que le eches queso, o de la “vaca que ríe” en plan de ese estilo, el que haya por allí o philadelfia y luego lo pasas con la batidora hasta la textura que te gudte</p>
+<h3 id="De_espinacas">De espinacas</h3><p></p>
+<h3 id="De_zanahoria">De zanahoria</h3><p></p>
+<h3 id="De_calabaza">De calabaza</h3><p></p>
+</section>
+<section id="Pescado">
+<h2>Pescado</h2>
+<h3 id="Lubina/dorada/_al_horno">Lubina/dorada/ al horno</h3><p></p>
+<h3 id="Salmón_a_la_plancha">Salmón a la plancha</h3><p></p>
+<h3 id="Atún">Atún</h3><p></p>
+<h3 id="Pez_espada_a_la_plancha">Pez espada a la plancha</h3><p></p>
+<h3 id="Gambas_al_ajillo">Gambas al ajillo</h3><p>Si no vienen peladas las pelas, y solo las cabezas las echas en la sartén y cuando tengas todas les echas aceite y las aplastas y les sacas el juguito, luego quitas las cabezas y todos los restos duros, enciendes el fuego y salteas las gambas con ajo y sal</p>
+</section>
+<section id="Variado">
+<h2>Variado</h2>
+<h3 id="Albóndigas_con_tomate">Albóndigas con tomate</h3><p>Como no sé si allí encontrarás las albondigas ya hechas como en el Mercadona, te explico como se hacen. Bates un huevo, y le añades la carne picada, 1 ajo picado, perejil y lo mezclas, haces las bolitas y las pasas por harina. Luego a una sartén con aceite y que se hagan. Para la salsa, pica 1/2 cebolla, 1 ajo y los sofríes en la misma sartén de las albondigas, y luego le echas tomate triturado y que haga chup chup un rato. Si te gusta la salsa con trozos puedes sofreír la cebolla y el ajo junto a las albondigas, pero si no, sacas las albondigas y haces la salsa independientemente, luego la pasas con la batidora, la vuelves a echar en la sartén con las albondigas y chup chup</p>
+<h3 id="Estofado_de_costillas_y_patata_a_la_bbq">Estofado de costillas y patata a la bbq</h3><p></p>
+<h3 id="Pisto">Pisto</h3><p></p>
+<h3 id="Muslitos_de_pollo">Muslitos de pollo</h3><p>Tengo dos formas de hacerlos. Al horno, en una bandeja pones el muslo y le echas aceite pimienta y sal y al horno a 200gº media hora, cuando pase, le das la vuelta pa que se haga por el otro lado y otra media hora, igualmente tienes q ir mirándolo cada 10-15 min pa q no se te queme. Y al fuego, los embadurnas con sal y pimienta y los sofríes con un buen chorreón de aceite por los dos lados con la tapa puesta que salta. Luego puedes poner cebolla y ajo lo separas del fuego y lo bajas a menos de la mitad y cuando este dorada la cebolla le echas vino blando, como una taza y chup chup hasta que se haga</p>
+<h3 id="Puré_de_patata_de_sobre_con_filete">Puré de patata de sobre con filete</h3><p></p>
+<h3 id="Patatas_alioli">Patatas alioli</h3><p>En una olla cueces las patatas durante 30 min a fuego medio. Luego las pelas y las cortas en trozos. El alioli lo puedes comprar o hacerlo casero</p>
+<h3 id="Patatas_aliñadas">Patatas aliñadas</h3><p>En una olla cueces las patatas durante 30 min a fuego medio. Luego las pelas y las cortas en trozos. Cortas cebolleta en juliana. Y juntas la patata con la cebolla, perejil, aceite sal y vinagre</p>
+</section>
+<section id="Cuando eches de menos casita">
+<h2>Cuando eches de menos casita</h2>
+<h3 id="Cocido/sopita">Cocido/sopita</h3><p>En una olla echas</p>
+<h3 id="Lentejas">Lentejas</h3><p>Pregunta en casa que le ponen tus padres pq esta es mi receta. Llevas una olla de agua, y le echas una patata, cebolla, zanahoria, chorizo, lentejas, pimentón y sal y dejas que hierva.</p>
+<h3 id="Tortilla_con_patatas">Tortilla con patatas</h3><p></p>
+<h3 id="Gazpacho/salmorejo">Gazpacho/salmorejo</h3><p>Para esto necesitas una termomix, entonces cuando llegues me dices si tienes y te mando la receta</p>
+<h3 id="Chocos_fritos">Chocos fritos</h3><p>Compras sepias pequeñas, no se como te vendrán, que si enteras o limpias. Pero las cortas en cachitos como un meñique de largo. Los pasas por harina con sal y a freír</p>
+<h3 id="Lagrimitas_de_pollo_con_alioli">Lagrimitas de pollo con alioli</h3><p>Cortas pechugas d pollo en tiras y las pones en un cuenco con ajo en polvo, zumo de 1/2 limón y un chorrito de vino blanco y las dejas macerar en la nevera tapadas por 2h. Para empanarlos, los pasas por harina, huevo batido y pan rallado y las fríes</p>
+<h3 id="Cachopo">Cachopo</h3><p>Coges dos filetes de ternera y los tienes q aplastar finitos, encima de uno le pones una capa de jamón serrano, una de queso y otra de jamón, luego lo cubres con el otro filete e intentas aplastar los bordes juntos. Lo empanas en harina, huevo y pan rallado y a freír</p>
+<h3 id="Solomillo_al_whisky">Solomillo al whisky</h3><p>Haces los filetes de solomillo en una sartén. Y en esa misma sartén sacas los filetes, sofríes cebolla y ajo picados, cuando estén le echas una cucharada de harina, lo mueves muchos pa q no se pegue, le echas un vaso de whisky y dos de agua y una pastilla de avecren. Dejas que se evapore el alcohol, que eso es cuando huelas la salsa y no se te abran todos los orificios respiratorios, y ya luego metes los filetes</p>
+<h3 id="Paella">Paella</h3><p>En una olla sofríes con aceite los trozos de carne (recomiendo muslitos de pollo o cerdo) hasta que esté dorado, lo retiramos hacia los bordes de la olla y añadimos al centro las verduras que quieras (cebolla, pimiento troceadito, judías verdes, guisantes) y 1 ajo, lo separas también al centro y echas tomate triturado, pimentón, sal y colorante (opcional), lo mezclas todo y le echas el arroz (es una tacita de té por persona), y ahí tienes el sofrito. Luego le echas caldo de pollo hasta que cubra el arroz y lo supere por un centímetro. Aquí puedes añadir azafrán si tienes. Mueve los ingredientes y tenlos 5 minutos a fuego alto, cuando pasen bájalo a fuego medio por 15 minutos o hasta que se cocine, luego quítalo del fuego y que repose por 10 minutos con la tapa puesta.</p>
+<h3 id="Boquerones_fritos">Boquerones fritos</h3><p>Si consigues boquerones pide q te los limpien, la cabeza y las espinas y si te gustan mas enteritos solo la cabeza. Luego los pasas por harina con sal y a freír</p>
+</section>
+<section id="Recetas chulis">
+<h2>Recetas chulis</h2>
+<h3 id="Fajitas_de_pollo/quesadillas">Fajitas de pollo/quesadillas</h3><p>Cortas 1/2 cebolla y 1/2 pimiento y los sofríes en aceite y luego le echas tiras de pechuga de pollo, cuando estén casi cocinados le echas el sazonador de fajitas si encuentras, si no, le echas sal, pimienta, cayena y ajo en polvo. Mientras eso se termina haces las tortitas en una sartén sin aceite. Las puedes acompañar de guacamole, salsa picante o queso rallado.</p>
+<h3 id="Hamburguesitas">Hamburguesitas</h3><p></p>
+<h3 id="Alitas_horno/fritas">Alitas horno/fritas</h3><p></p>
+<h3 id="Pan_de_ajo_y_queso">Pan de ajo y queso</h3><p>En un cuenquito echas un buen trozo de mantequilla y bastante ajo en polvo y lo llevas al microondas para que se cocine un poco. Lo extiendes en un pan, le echas queso rallado orégano y sal y al horno a unos 180 por menos 10 min seguramente, igualmente ve mirándolos casa unos minutos no sea que se queme</p>
+<h3 id="Pan_pizza">Pan pizza</h3><p>Receta que te salva de un apuro. Coges pan le pones tomate con sal y pimienta, le echas queso, jamón y orégano y al horno a unos 180 por menos 10 min seguramente, igualmente ve mirándolos casa unos minutos no sea que se queme</p>
+<h3 id="Patatas_rellenas">Patatas rellenas</h3><p>Cubres las patatas en papel de plata y las llevas al horno a 200gº durante 40-60 min, hasta que se pueda clavar un tenedor fácil. Sácalas y espera a que se enfríen, las cortas por la mitad y le quitas lo de dentro sin llegar a la piel, como si fuera un recipiente. Con lo que has quitado lo puedes mezclar con queso nata y bacon o con boloñesa, a ambas les pones mas queso por encima y las gratinas en el horno</p>
+<h3 id="Gratinado_de_patatas">Gratinado de patatas</h3><p></p>
+<h3 id="Nachos_con_queso">Nachos con queso</h3><p></p>
+<h3 id="Huevos_fritos_con_patatas">Huevos fritos con patatas</h3><p></p>
+<h3 id="Fingers_de_pollo">Fingers de pollo</h3><p>Mi receta personal para que queden como de restaurante. En un bol echas harina como unas 5 cucharas mas o menos y le echas agua, hasta que quede una masa liquida pero espesa, y le echas sal, pimienta, pimentón y ajo en polvo. Cortas la pechuga de pollo en tiras gorditas y las echas en la mezcla, con que macere media hora vale, pero cuanto mas tiempo esté mejor. En un plato echas mas harina con las mismas especias y cubres las tiras de pollo. Para cubrirlas tienes que darte prisa pq se te escurre la masa liquida. Y luego a freír</p>
+<h3 id="Noodles">Noodles</h3><p>Sofríe cebolla, pimientos y pollo cortados en tiras y añade ajo en polvo y salsa soja al gusto. Hierve los noodles y los juntas con el sofrito, ajusta de soja y algo de picante si quieres</p>
+</section>
+<section id="Cenas rápidas">
+<h2>Cenas rápidas</h2>
+<h3 id="Filetes_pollo_plancha">Filetes pollo plancha</h3><p></p>
+<h3 id="Filetes_de_chuleta_de_cerdo_plancha">Filetes de chuleta de cerdo plancha</h3><p></p>
+<h3 id="Filetes_de_ternera_plancha">Filetes de ternera plancha</h3><p></p>
+<h3 id="Filetes_de_lomo_de_cerdo">Filetes de lomo de cerdo</h3><p></p>
+<h3 id="Filetes_de_solomillo_de_cerdo">Filetes de solomillo de cerdo</h3><p></p>
+<h3 id="Tortilla_francesa">Tortilla francesa</h3><p>opciones—&gt; queso y jamón, atún, espinacas</p>
+<h3 id="Sandwich_jamón_y_queso">Sandwich jamón y queso</h3><p></p>
+<h3 id="Salchichas/longanizas">Salchichas/longanizas</h3><p></p>
+</section>
+<section id="Preparaciones básicas">
+<h2>Preparaciones básicas</h2>
+<h3 id="Arroz">Arroz</h3>
+<h3 id="Pasta">Pasta</h3><p></p>
+<h3 id="Bechamel">Bechamel</h3><p>En una olla con el fuego medio alto echas una cucharada de mantequilla, cuando se derrita le echas una cucharada de harina, y con la espumadera lo mueves para que se vaya el sabor a harina, unos 2-3 min, y luego le echas la cantidad de leche que necesites. Echas sal, pimienta y nuez moscada, sube el fuego y no pares de batir hasta que espese y q no se pegue al fondo</p>
+<h3 id="Alioli">Alioli</h3><p>En un vaso de batidora pones 1 ajo, un huevo (si el huevo lleva un ratito fuera de la nevera mejor), un chorrito de vinagre, sal y aceite, es bastante, depende de la cantidad que necesites le añades mas o menos. Y lo bates todo con una batidora de mano</p>
+</section>
+<section id="extras"><h2>Secciones extra</h2><h3>Indispensables en la despensa</h3><p>Leche</p><p>Huevos</p><p>Frutas</p><p>Cebolla</p><p>Ajo</p><p>Queso</p><p>Mantequilla</p><p>Nata</p><p>Tomate frito</p><h3>Truquitos para facilitarte la vida</h3><p>Como cortar cebolla</p><h3>Recomendaciones</h3><p>Toma mínimo una pieza de fruta al día.</p><p>De verduras son dos raciones, la recomendación es una cocinada y la otra cruda.</p><p>Intenta tomar pescado, al menos la misma cantidad que tomas en casa</p><p>Cuando vayas a comprar no vayas con hambre y siempre ve con una lista o una ligera idea de lo que vas a comer para ahorrarte dinero</p><p>Para los paquetes que deberías comprar y que tengas una idea de cuanto se come de cada te doy una lista de las cantidades recomendadas, por si tienes q ir a una carnicería o pescadería o para la pasta o arroz</p><p>Pasta y arroz: 80 a 100 gr</p><p>Legumbres: 80 a 100 gr (150 si son cocidas)</p></section></body>
+</html>
